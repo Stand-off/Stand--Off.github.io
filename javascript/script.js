@@ -1,3 +1,4 @@
+document.getElementById("latest_game").style.display = "none";
 'use strict';
 
 
@@ -75,8 +76,26 @@ balances.forEach((balance) => {
   });
 });
 
+//read more
 
-const loginBtn = document.getElementById('login-btn');
-loginBtn.addEventListener('click', function() {
-  window.location.href = 'https://example.com/login'; //replace "https://example.com/login" with the URL of your login page
-});
+function myFunction() {
+  var x = document.getElementById("latest_game");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+/*<script type="text/javascript" scr="js/script.js"></script>
+                
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new typed(".span", {
+        strings:[".....","Long Gone"],
+        typeSpeed: 70,
+        backSpeed: 60,
+        loop:true
+    });
+
+</script>*/
